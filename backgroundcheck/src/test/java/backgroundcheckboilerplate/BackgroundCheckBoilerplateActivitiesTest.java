@@ -1,3 +1,4 @@
+/* @dacx */
 package backgroundcheckboilerplate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -46,7 +47,7 @@ id: backgroundcheck-boilerplate-add-test-framework-activities
 title: Add a testing framework for Testing Activities
 description: How to add a testing framework to your Temporal Application.
 label: Test framework
-lines: 3-27
+lines: 4-28
 tags:
 - testing
 - developer guide
@@ -59,7 +60,7 @@ id: backgroundcheck-boilerplate-add-activity-tests
 title: Add Activity method tests
 description: How to test Activity code
 label: Test Activity code
-lines: 20-41
+lines: 21-42
 tags:
 - testing
 - developer guide
