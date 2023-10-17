@@ -1,4 +1,4 @@
-/* @dacx */
+/* dacx */
 package backgroundcheckboilerplate;
 
 public class BackgroundCheckBoilerplateActivitiesImpl implements BackgroundCheckBoilerplateActivities{

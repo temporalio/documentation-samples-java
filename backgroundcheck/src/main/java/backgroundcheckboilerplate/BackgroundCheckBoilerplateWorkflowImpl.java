@@ -1,4 +1,4 @@
-/* @dacx */
+/* dacx */
 package backgroundcheckboilerplate;
 
 import io.temporal.activity.ActivityOptions;

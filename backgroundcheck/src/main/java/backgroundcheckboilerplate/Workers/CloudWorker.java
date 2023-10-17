@@ -1,4 +1,4 @@
-/* @dacx */
+/* dacx */
 package backgroundcheckboilerplate.Workers;
 
 import java.io.FileInputStream;
