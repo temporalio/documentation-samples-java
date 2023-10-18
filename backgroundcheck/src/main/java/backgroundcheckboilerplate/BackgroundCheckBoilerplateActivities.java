@@ -19,7 +19,7 @@ public interface BackgroundCheckBoilerplateActivities {
 }
 
 /* @dacx
-id: boilerplate-backgroundcheck-activity-interface
+id: backgroundcheck-boilerplate-activity-interface
 title: BackgroundCheck Workflow Interface
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.

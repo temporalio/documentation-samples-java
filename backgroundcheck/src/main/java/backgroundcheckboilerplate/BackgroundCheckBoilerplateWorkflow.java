@@ -20,7 +20,7 @@ public interface BackgroundCheckBoilerplateWorkflow {
 }
 
 /* @dacx
-id: boilerplate-backgroundcheck-workflow-interface
+id: backgroundcheck-boilerplate-workflow-interface
 title: BackgroundCheck Workflow Interface
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.

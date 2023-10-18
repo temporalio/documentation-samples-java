@@ -47,7 +47,7 @@ way you'd organize your standard java code.
 */
 
 /* @dacx
-id: boilerplate-backgroundcheck-workflow-implementation
+id: backgroundcheck-boilerplate-workflow-implementation
 title: BackgroundCheck Workflow Implementation
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
@@ -60,7 +60,7 @@ lines: 4-27
 @dacx */
 
 /* @dacx
-id: boilerplate-backgroundcheck-workflow-details
+id: backgroundcheck-boilerplate-workflow-details
 title: BackgroundCheck Workflow Implementation
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
