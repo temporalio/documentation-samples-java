@@ -1,5 +1,5 @@
 /* dacx */
-package backgroundcheckboilerplate.Workers;
+package backgroundcheckboilerplate.workers;
 
 import backgroundcheckboilerplate.BackgroundCheckBoilerplateActivitiesImpl;
 import backgroundcheckboilerplate.BackgroundCheckBoilerplateWorkflowImpl;
