@@ -1,6 +1,10 @@
 /* dacx */
 package backgroundcheckboilerplate;
 
+/*
+Now that you've defined your Activity Interface you can define its implementation.
+*/
+
 public class BackgroundCheckBoilerplateActivitiesImpl implements BackgroundCheckBoilerplateActivities{
 
   @Override
@@ -32,7 +36,7 @@ tags:
 - developer guide
 - activity
 - code sample
-lines: 4-18
+lines: 4-21
 @dacx */
 
 /* @dacx
@@ -44,7 +48,7 @@ tags:
 - java sdk
 - developer guide
 - activity
-lines: 20-24
+lines: 23-27
 @dacx */
 
 
