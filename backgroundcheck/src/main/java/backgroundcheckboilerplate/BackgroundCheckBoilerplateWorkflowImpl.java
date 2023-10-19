@@ -6,6 +6,10 @@ import io.temporal.workflow.Workflow;
 
 import java.time.Duration;
 
+/*
+Now that you've defined your Workflow Interface you can define its implementation.
+*/
+
 public class BackgroundCheckBoilerplateWorkflowImpl implements BackgroundCheckBoilerplateWorkflow {
 
   // Define the Activity Execution options
@@ -27,15 +31,22 @@ public class BackgroundCheckBoilerplateWorkflowImpl implements BackgroundCheckBo
 }
 
 /*
-Workflow Definitions support the passing of parameters.
-All Workflow Definition parameters must be serializable (using the Jackson JSON 
+You define your Workflow Implementation by defining a class that `implements` the
+Workflow Interface.
+
+To have a Workflow call Activities, you'll instantiate an object representing
+those Activities. There are various options that can be passed in during creation
+time, but Temporal requires that you set _either_ `StartToCloseTimeout` or `ScheduleToCloseTimeout`
+when creating your Activities stub. You can read more about these options [in our documentation](/concepts/activities#start-to-close-timeout)
+
+As with regular Java methods, Workflow Methods support the passing of parameters.
+However, all Workflow Definition parameters must be serializable (using the Jackson JSON 
 Payload Converter).
 
 To request the execution of an Activity, also referred to as an [Activity Execution](/concepts/what-is-an-activity-execution), 
 call the Activity Method from within the Workflow Method. Use the `activities`
-object that was created in the Workflow Definition, along with the name of the 
-method and any parameters that need to be passed. 
-
+object that was created in the Workflow Definition to call the Activity Method 
+along with the any parameters that need to be passed. 
 
 A Java-based Workflow Definition can return any serializable output, or raise an 
 exception if one was encountered.
@@ -43,7 +54,7 @@ We get into the best practices around Workflow parameters, return values, and
 exceptions in the one of the next sections.
 
 In regards to code organization, we recommend organizing Workflow code the same
-way you'd organize your standard java code. 
+way you'd organize your standard Java code. 
 */
 
 /* @dacx
@@ -56,7 +67,7 @@ tags:
 - developer guide
 - workflow
 - code sample
-lines: 4-27
+lines: 4-31
 @dacx */
 
 /* @dacx
@@ -68,5 +79,5 @@ tags:
 - java sdk
 - developer guide
 - workflow
-lines: 29-47
+lines: 33-58
 @dacx */
