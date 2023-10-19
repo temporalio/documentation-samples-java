@@ -24,7 +24,7 @@ with `@WorkflowInterface`. Then designate a method within the interface
 as the Workflow Method by annotating its method signature with `@WorkflowMethod`.
 The Workflow Method is the method that will be invoked when executing a Workflow.
 There can only be one Workflow Method per Workflow Definition.
- */
+*/
 
 /* @dacx
 id: backgroundcheck-boilerplate-workflow-interface
