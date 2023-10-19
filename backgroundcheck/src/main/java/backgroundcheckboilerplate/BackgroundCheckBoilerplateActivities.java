@@ -4,8 +4,7 @@ package backgroundcheckboilerplate;
 import io.temporal.activity.ActivityInterface;
 
 /*
-In the Temporal Java SDK programming model, a Activity is an interface and its implementation.
-The `BackgroundCheckWorkflow` interface below is an example of a the first part defining an Activity
+The `BackgroundCheckActivity` interface below is an example of a the first part defining an Activity
 */
 
 // Activity Interfaces must be annotated with @ActivityInterface
@@ -18,15 +17,35 @@ public interface BackgroundCheckBoilerplateActivities {
 
 }
 
+/* 
+To designate an interface as a Activity, annotate the interface declaration
+with `@ActivityInterface`. Then designate a method within the interface
+as the Activity Method by annotating its method signature with `@ActivityMethod`.
+The Activity Method is the method that will be invoked when executing a specificy
+Activity. There can multiple Activity Methods per Activity Definition.
+*/
+
 /* @dacx
 id: backgroundcheck-boilerplate-activity-interface
-title: BackgroundCheck Workflow Interface
+title: BackgroundCheck Activity Interface
+label: Activity code
+description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
+tags:
+- java sdk
+- developer guide
+- activity  
+- code sample
+lines: 4-18
+@dacx */
+
+/* @dacx 
+id: backgroundcheck-boilerplate-activity-interface-details
+title: BackgroundCheck Activity Interface Details
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
 - java sdk
 - developer guide
 - activity
-- code sample
-lines: 4-19
+lines: 20-26
 @dacx */
