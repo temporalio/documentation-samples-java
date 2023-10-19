@@ -17,7 +17,10 @@ to allow for testing Workflows. There are two ways to test Workflows; the first
 is to test the Workflow code without invoking the real Activities by mocking
 the Workflow's Activities and the second is to test the Workflow and its Activities
 in their entirety. This section will focus on the first scenario while a following.
-section will cover the later. 
+section will cover the later. Testing your Workflows without invoking your Activities
+can be useful for testing Workflow specific logic without having to worry about
+the Activity invocation producing a side-effect or having any Activity downstream
+dependency, such as a microservice, be available during the duration of your testing.
 
 Testing Workflows is similar to testing non-Temporal java code.
 
@@ -68,11 +71,15 @@ public class BackgroundCheckBoilerplateWorkflowTest {
 }
 
 /* 
-To test Workflow code in isolation, that is, without invoking the Activity
-code and only testing the Workflow code, use Mocking. 
-
-This example demonstrates how to use Mockito to mock an Activity and have
-your Workflow invoke the mocked Activity.
+To test your Workflow using mocked activities first you should create a mocked 
+object of your Activity class to be used for testing. Then you mock the 
+Activity method, in this case `ssNTraceAcvitity`, so that when when a specific
+value is passed to the Activity it returns a specific result. 
+Then the mocked object was used to register the mocked Activities with the Worker
+being used in the test environment. Then you invoke your Workflow as usual, passing
+in the specific value for your Activity so that the Activity returns the result
+you are expecting. This allows you to test the Workflow code without having to worry
+about actually invoking the Activity.
 */
 
 /* @dacx
@@ -80,7 +87,7 @@ id: backgroundcheck-boilerplate-add-workflow-tests
 title: Testing Workflows
 description: How to test your Temporal Application Workflows
 label: Test framework details
-lines: 4-68
+lines: 4-71
 tags:
 - testing
 - developer guide
@@ -97,5 +104,5 @@ tags:
 - testing
 - developer guide
 - java sdk
-lines: 70-78
+lines: 73-83
 @dacx */
