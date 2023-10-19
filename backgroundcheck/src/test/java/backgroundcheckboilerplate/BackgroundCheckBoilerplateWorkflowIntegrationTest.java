@@ -14,7 +14,7 @@ to allow for testing Workflows. There are two ways to test Workflows; the first
 is to test the Workflow code without invoking the real Activities by mocking
 the Workflow's Activities and the second is to test the Workflow and its Activities
 in their entirety. This section will focus on the second scenario while a previous
-section will cover the later. 
+section will cover the first. 
 
 As for the actual testing code, testing Workflows is similar to testing non-Temporal java code.
 
@@ -66,7 +66,13 @@ perform as part of its regular execution will be performed as part of testing.
 We recommend either having an entirely separate testing environment for testing
 your Workflows, or testing your Workflow and Activity code in isolation, as
 detailed in prior sections in this guide. 
- */
+
+As for the code, first you register your Workflow with the `TestWorkflowExtension`.
+This extension allows you to pass in a `TestWorkflowEnvironment`, `Worker`, and 
+an instance of your Workflow into your tests. From there you register your Activities
+with the Worker, start the test environment, and invoke your Workflow as you would 
+typically. Then you assert that the results are what you expected.
+*/
 
 /* @dacx
 id: backgroundcheck-boilerplate-add-workflow-integration-tests
@@ -90,5 +96,5 @@ tags:
 - testing
 - developer guide
 - java sdk
-lines: 59-68
+lines: 59-75
 @dacx */
