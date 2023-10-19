@@ -7,9 +7,11 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 import io.temporal.testing.TestActivityExtension;
 
 /*
- ** How to add a Testing Framework and Tests Testing Activities.**
+Temporal provides the `TestActivityEnvironment` and `TestActivityExtension` classes
+to allow for testing Activities outside the scope of a Workflow. Testing
+Activities is similar to testing non-Temporal java code.
 
-We can test Activity code for the following conditions:
+Some examples of things an Activity can be tested for are:
 - Exceptions thrown when invoking the Activity Execution.
 - Exceptions thrown when checking for the result of the Activity Execution.
 - Activity return values. Check to ensure the return value is expected.
@@ -59,7 +61,7 @@ id: backgroundcheck-boilerplate-add-activity-tests
 title: Testing Activities
 description: How to add a testing framework to your Temporal Application.
 label: Test framework
-lines: 4-42
+lines: 4-44
 tags:
 - testing
 - developer guide
@@ -72,7 +74,7 @@ id: backgroundcheck-boilerplate-add-activity-tests-details
 title: Add Activity method tests
 description: How to test Activity code
 label: Test Activity code
-lines: 44-55
+lines: 46-57
 tags:
 - testing
 - developer guide
