@@ -80,7 +80,7 @@ id: backgroundcheck-boilerplate-add-workflow-tests
 title: Testing Workflows
 description: How to test your Temporal Application Workflows
 label: Test framework details
-lines: 4-70
+lines: 4-68
 tags:
 - testing
 - developer guide
@@ -97,5 +97,5 @@ tags:
 - testing
 - developer guide
 - java sdk
-lines: 72-78
+lines: 70-78
 @dacx */
