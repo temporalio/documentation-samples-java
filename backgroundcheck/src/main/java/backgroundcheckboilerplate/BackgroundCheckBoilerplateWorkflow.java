@@ -5,7 +5,7 @@ import io.temporal.workflow.WorkflowInterface;
 import io.temporal.workflow.WorkflowMethod;
 
 /*
-In the Temporal Java SDK programming model, a [Workflow Definition](/concepts/what-is-a-workflow-definition) is an interface and its implementation.
+In the Temporal Java SDK programming model, a [Workflow Definition](/concepts/what-is-a-workflow-definition) is defined as an interface and its implementation.
 The `BackgroundCheckWorkflow` interface below is an example of a the first part of a Workflow Definition.
 */
 
@@ -19,9 +19,16 @@ public interface BackgroundCheckBoilerplateWorkflow {
 
 }
 
+/* To designate an interface as a Workflow, annotate the interface declaration
+   with `@WorkflowInterface`. Then designate a method within the interface
+   as the Workflow Method by annotating its method signature with `@WorkflowMethod`.
+   The Workflow Method is the method that will be invoked when executing a Workflow.
+   There can only be one Workflow Method per Workflow Definition.
+ */
+
 /* @dacx
 id: backgroundcheck-boilerplate-workflow-interface
-title: BackgroundCheck Workflow Interface
+title: BackgroundCheck Workflow Definition
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
 tags:
@@ -31,3 +38,15 @@ tags:
 - code sample
 lines: 4-20
 @dacx */
+
+/* @dacx 
+id: backgroundcheck-boilerplate-workflow-interface-details
+title: BackgroundCheck Workflow Definition
+label: Workflow code
+description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
+tags:
+- java sdk
+- developer guide
+- workflow
+lines: 22-27
+*/
