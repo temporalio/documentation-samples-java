@@ -24,7 +24,7 @@ Payload Converter).
 
 /* @dacx
 id: backgroundcheck-boilerplate-activity-implementation
-title: BackgroundCheck Activity Interface
+title: BackgroundCheckBoilerplate Activity Interface
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
@@ -37,7 +37,7 @@ lines: 4-18
 
 /* @dacx
 id: backgroundcheck-boilerplate-activity-implementation-details
-title: BackgroundCheck Activity Interface
+title: BackgroundCheckBoilerplate Activity Interface
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:

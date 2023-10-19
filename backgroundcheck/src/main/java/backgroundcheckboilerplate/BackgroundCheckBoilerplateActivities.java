@@ -27,7 +27,7 @@ Activity. There can multiple Activity Methods per Activity Definition.
 
 /* @dacx
 id: backgroundcheck-boilerplate-activity-interface
-title: BackgroundCheck Activity Interface
+title: BackgroundCheckBoilerplate Activity Interface
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
@@ -40,7 +40,7 @@ lines: 4-18
 
 /* @dacx 
 id: backgroundcheck-boilerplate-activity-interface-details
-title: BackgroundCheck Activity Interface Details
+title: BackgroundCheckBoilerplate Activity Interface Details
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
