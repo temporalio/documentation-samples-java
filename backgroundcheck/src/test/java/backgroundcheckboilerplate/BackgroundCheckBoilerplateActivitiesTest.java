@@ -20,10 +20,9 @@ This example asserts that the expected value was returned by the invocation of t
 
 public class BackgroundCheckBoilerplateActivitiesTest {
 
-  /* Use JUnit Extensions to simplify the creation of the test environment.
-     This creates an environment and registers Activities to a Worker for testing.
-     If you would rather set this up yourself, look into TestActivityEnvironment
-  */
+  // Use JUnit Extensions to simplify the creation of the test environment.
+  // This creates an environment and registers Activities to a Worker for testing.
+  // If you would rather set this up yourself, look into TestActivityEnvironment
   @RegisterExtension
   public static final TestActivityExtension activityExtension = TestActivityExtension.newBuilder()
       .setActivityImplementations(new BackgroundCheckBoilerplateActivitiesImpl()).build();
@@ -44,7 +43,7 @@ public class BackgroundCheckBoilerplateActivitiesTest {
 
 /* @dacx
 id: backgroundcheck-boilerplate-add-test-framework-activities
-title: Add a testing framework for Testing Activities
+title: Testing Activities
 description: How to add a testing framework to your Temporal Application.
 label: Test framework
 lines: 4-28

@@ -21,9 +21,20 @@ public class BackgroundCheckBoilerplateActivitiesImpl implements BackgroundCheck
 }
 
 /*
-Activity Definitions support the passing of parameters.
-All Activity Definition parameters must be serializable (using the Jackson JSON 
+You define your Activity Implementation by defining a class that `implements` the
+Activity Interface.
+
+As with regular Java methods, Activity Methods support the passing of parameters.
+However, all Activity parameters must be serializable (using the Jackson JSON 
 Payload Converter).
+
+A Java-based Activity Definition can return any serializable output, or raise an 
+exception if one was encountered.
+We get into the best practices around Activity parameters, return values, and 
+exceptions in the one of the next sections.
+
+In regards to code organization, we recommend organizing Activity code the same
+way you'd organize your standard Java code. 
 */
 
 /* @dacx
@@ -48,7 +59,7 @@ tags:
 - java sdk
 - developer guide
 - activity
-lines: 23-27
+lines: 23-38
 @dacx */
 
 
