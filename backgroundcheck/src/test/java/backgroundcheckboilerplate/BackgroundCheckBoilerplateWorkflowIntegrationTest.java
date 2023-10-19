@@ -48,7 +48,7 @@ public class BackgroundCheckBoilerplateWorkflowIntegrationTest {
 }
 
 /* @dacx
-id: backgroundcheck-boilerplate-add-test-framework-workflow-integration
+id: backgroundcheck-boilerplate-add-workflow-integration-tests
 title: Workflow Integration Testing
 description: How to test the integration between your Workflows and Activities
 label: Test framework
@@ -61,7 +61,7 @@ tags:
 @dacx */
 
 /* @dacx
-id: backgroundcheck-boilerplate-add-workflow-integration-tests
+id: backgroundcheck-boilerplate-add-workflow-integration-tests-details
 title: Add Workflow Integration tests
 description: How to test the integration between Workflows and Activities
 label: Test Workflow Integration
