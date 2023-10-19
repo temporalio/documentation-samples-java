@@ -19,7 +19,8 @@ public interface BackgroundCheckBoilerplateWorkflow {
 
 }
 
-/* To designate an interface as a Workflow, annotate the interface declaration
+/* 
+   To designate an interface as a Workflow, annotate the interface declaration
    with `@WorkflowInterface`. Then designate a method within the interface
    as the Workflow Method by annotating its method signature with `@WorkflowMethod`.
    The Workflow Method is the method that will be invoked when executing a Workflow.
