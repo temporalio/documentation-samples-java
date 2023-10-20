@@ -28,7 +28,7 @@ There can only be one Workflow Method per Workflow Definition.
 
 /* @dacx
 id: backgroundcheck-boilerplate-workflow-interface
-title: BackgroundCheckBoilerplate Workflow Interface
+title: Boilerplate Workflow Interface
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
 tags:
@@ -41,7 +41,7 @@ lines: 4-20
 
 /* @dacx 
 id: backgroundcheck-boilerplate-workflow-interface-details
-title: BackgroundCheckBoilerplate Workflow Interface Details
+title: Boilerplate Workflow Interface Details
 label: Workflow code
 description: In the Temporal Java SDK, a Workflow Definition is an interface and its implementation.
 tags:

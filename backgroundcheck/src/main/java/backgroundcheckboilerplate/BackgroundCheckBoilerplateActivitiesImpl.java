@@ -39,7 +39,7 @@ way you'd organize your standard Java code.
 
 /* @dacx
 id: backgroundcheck-boilerplate-activity-implementation
-title: BackgroundCheckBoilerplate Activity Implementation
+title: Boilerplate Activity Implementation
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
@@ -52,7 +52,7 @@ lines: 4-21
 
 /* @dacx
 id: backgroundcheck-boilerplate-activity-implementation-details
-title: BackgroundCheckBoilerplate Activity Implementation
+title: Boilerplate Activity Implementation
 label: Activity code
 description: In the Temporal Java SDK, an Activity Definition is an interface and its implementation.
 tags:
