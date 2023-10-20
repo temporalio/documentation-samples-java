@@ -13,7 +13,7 @@ The `BackgroundCheckActivity` interface below is an example of a the first part 
 public interface BackgroundCheckBoilerplateActivities {
 
   // ssnTraceActivity is your custom Activity Definition
-  public String ssnTraceActivity(String name);
+  public String ssnTraceActivity(String socialSecurityNumber);
 
 }
 

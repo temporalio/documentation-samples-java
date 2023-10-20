@@ -8,7 +8,7 @@ Now that you've defined your Activity Interface you can define its implementatio
 public class BackgroundCheckBoilerplateActivitiesImpl implements BackgroundCheckBoilerplateActivities{
 
   @Override
-  public String ssnTraceActivity(String name){
+  public String ssnTraceActivity(String socialSecurityNumber){
     
     // This is where a call to another service would be made to perform the trace
     // We are simulating that the service that does SSNTrace executed successfully
