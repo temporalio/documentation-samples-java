@@ -141,23 +141,23 @@ Progress:
 */
 
 /* @dacx
-id: add-sleep-for-one-minute
-title: Add a call to sleep
-description: Add a call to sleep for one minute to the beginning of the Workflow.
-label: Add sleep call
+id: backgroundcheck-replay-intrinsic-non-determinism
+title: Intrinsic non-deterministic logic
+description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
+label: intrinsic-non-deterministic-logic
 lines: 4-63
 tags:
-- timer
-- sleep
-- logger
+- tests
+- replay
+- event history
 @dacx */
 
 /* @dacx
-id: inspect-the-new-event-history
-title: Inspect the new Event History
-description: After making changes to the code, we must update the Event History JSON file to get tests to pass.
-label: Inspect new Event History
-lines: 65-144
+id: backgroundcheck-replay-inspecting-the-non-deterministic-error
+title: Intrinsic non-deterministic logic
+description: This kind of logic prevents the Workflow code from executing to completion because the Workflow can take a different code path than the one expected from the Event History.
+label: intrinsic-non-deterministic-logic
+lines: 65-141
 tags:
 - tests
 - replay
