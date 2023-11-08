@@ -56,10 +56,10 @@ public class BackgroundCheckReplayWorkflowTest {
 
   /*
   Add the Replay test to the set of application tests.
-  The Replayer is available from the `go.temporal.io/sdk/worker` package in the SDK.
+  The Replayer is available from the `io.temporal.testing` package in the SDK.
   Register the Workflow Definition and then specify an existing Event History to compare to.
 
-  Run the tests in the test directory (`go test`).
+  Run the tests in the test directory (`mvn test` or `./gradlew test`).
   If the Workflow Definition and the Event History are incompatible then the test fails.
   */  
 

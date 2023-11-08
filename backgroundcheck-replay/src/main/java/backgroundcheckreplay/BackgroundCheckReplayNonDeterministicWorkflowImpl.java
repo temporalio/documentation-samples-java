@@ -76,7 +76,7 @@ io.temporal.worker.NonDeterministicException: Failure handling event 5 of type '
 
 And you will see information about the failure in the Web UI as well.
 
-![Web UI view of a non-determinism error](/img/non-deterministic-workflow-task-failure-java.png)
+![Web UI view of a non-determinism error](/img/java/non-deterministic-workflow-task-failure-java.png)
 
 To inspect the Workflow Task failure using the Temporal CLI, you can use the `long` value for the `--fields` command option with the `temporal workflow show` command.
 
