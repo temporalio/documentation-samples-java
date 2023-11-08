@@ -48,7 +48,7 @@ public class BackgroundCheckReplayNonDeterministicWorkflowImpl implements Backgr
     // highlight-start
     // CAUTION, the following code is an anti-pattern showing what NOT to do
     Random random = new Random();
-    if(random.nextInt(101)>= 1000){
+    if(random.nextInt(101)>= 50){
       Workflow.sleep(Duration.ofSeconds(60));
     }
     //highlight-end

@@ -55,7 +55,7 @@ You should expect to see the `TestReplayWorkflowHistoryFromFile` test fail.
 This is because the code we added creates new Events and alters the Event History sequence.
 
 To get this test to pass, we must get an updated Event History JSON file.
-[Start a new Workflow](/go/chapter-project-setup/backgroundcheck-boilerplate-start-workflow) and after it is complete [download the Event History as a JSON object](/go/chapter-durable-execution/retrieve-event-history).
+[Start a new Workflow](/java/chapter-project-setup/backgroundcheck-boilerplate-start-workflow) and after it is complete [download the Event History as a JSON object](/java/chapter-durable-execution/retrieve-event-history).
 
 :::info Double check Task Queue names
 
@@ -107,7 +107,7 @@ id: inspect-the-new-event-history
 title: Inspect the new Event History
 description: After making changes to the code, we must update the Event History JSON file to get tests to pass.
 label: Inspect new Event History
-lines: 52-92
+lines: 52-91
 tags:
 - tests
 - replay

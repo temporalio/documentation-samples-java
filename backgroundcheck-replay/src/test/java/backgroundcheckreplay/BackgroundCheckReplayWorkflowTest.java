@@ -80,7 +80,7 @@ id: add-replay-test-to-background-check-workflow
 title: Add a Replay test
 description: Define the code needed to run a Worker Process in Go.
 label: Add Replay test
-lines: 52-70
+lines: 66-75
 tags:
 - testing
 - replay test
